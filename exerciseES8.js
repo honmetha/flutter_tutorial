@@ -38,3 +38,9 @@ let obj = {
 'my name is Rudolf the raindeer'
 
 // solution
+let x = [];
+Object.entries(obj).map(value => {
+  return x = x.concat(value);
+})
+
+x = x.join(' ');
