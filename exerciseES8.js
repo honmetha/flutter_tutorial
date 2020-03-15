@@ -25,7 +25,9 @@ rabbit = rabbit.padStart(9);
 turtle = turtle.trim().padEnd(9, '=');
 
 // answer
+"     ||<- Start line"
 "🐢======="
+"       🐇"
 
 
 // #3) Get the below object to go from:
@@ -38,9 +40,4 @@ let obj = {
 'my name is Rudolf the raindeer'
 
 // solution
-let x = [];
-Object.entries(obj).map(value => {
-  return x = x.concat(value);
-})
-
-x = x.join(' ');
+Object.entries(obj).map(value => value.join(" ")).join(" ");
