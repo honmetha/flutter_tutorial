@@ -1,5 +1,8 @@
 # Tutorial 2: The Net Ninja Flutter Tutorial
 
+![What is Flutter?](./uploads/what-is-flutter.png)
+![Why Flutter?](./uploads/why-flutter.png)
+
 1. Intro & Setup
 1. Flutter Overview
 1. Dart Primer
