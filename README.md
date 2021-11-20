@@ -7,7 +7,9 @@
 
 1. Intro & Setup
 1. Flutter Overview
-   <img src="./uploads/overview.png" alt="Overview" width="300px">
+   <p float="left">
+    <img src="./uploads/overview.png" alt="Overview" width="300px">
+   </p>
 1. Dart Primer
 1. Creating a Flutter App in Android Studio
 1. Scaffold & AppBar Widgets
