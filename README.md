@@ -3,8 +3,11 @@
 ![What is Flutter?](./uploads/what-is-flutter.png)
 ![Why Flutter?](./uploads/why-flutter.png)
 
+## 📖 Chapters
+
 1. Intro & Setup
 1. Flutter Overview
+   <img src="./uploads/overview.png" alt="Overview" width="300px">
 1. Dart Primer
 1. Creating a Flutter App in Android Studio
 1. Scaffold & AppBar Widgets
