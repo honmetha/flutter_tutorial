@@ -12,8 +12,9 @@
    </p>
 1. Dart Primer
    - Statically typed programming language
-   - Dart List is similar to JavaScript array
+   - Dart list is similar to JavaScript array
    - Class is the blueprint that describes objects
+   - Dart is OOP
 1. Creating a Flutter App in Android Studio
 1. Scaffold & AppBar Widgets
 1. Colours & Fonts
