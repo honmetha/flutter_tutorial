@@ -11,6 +11,7 @@
     <img src="./uploads/overview.png" alt="Overview" width="300px">
    </p>
 1. Dart Primer
+   - Statically typed programming language
 1. Creating a Flutter App in Android Studio
 1. Scaffold & AppBar Widgets
 1. Colours & Fonts
