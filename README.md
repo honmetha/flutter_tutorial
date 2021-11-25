@@ -1,16 +1,55 @@
-# flutter_tutorial
+# Tutorial 2: The Net Ninja Flutter Tutorial
 
-A new Flutter project.
+![What is Flutter?](./uploads/what-is-flutter.png)
+![Why Flutter?](./uploads/why-flutter.png)
 
-## Getting Started
+## 📖 Chapters
 
-This project is a starting point for a Flutter application.
+1. Intro & Setup
+1. Flutter Overview
+   <p float="left">
+    <img src="./uploads/overview.png" alt="Overview" width="300px">
+   </p>
+1. Dart Primer
+   - Statically typed programming language
+   - Dart list is similar to JavaScript array
+   - Class is the blueprint that describes objects
+   - Dart is OOP
+1. Creating a Flutter App in Android Studio
+1. Scaffold & AppBar Widgets
+1. Colours & Fonts
+1. Stateless Widgets & Hot Reload
+1. Images & Assets
+1. Buttons & Icons
+1. Containers & Padding
+1. Rows
+1. Columns
+1. Flutter Outline & Shortcuts
+1. Expanded Widgets
+1. Ninja ID Project
+1. Stateful Widgets
+1. Lists of Data
+1. Custom Classes
+1. Cards
+1. Extracting Widgets
+1. Functions as Parameters
+1. Starting the World Time App
+1. Maps & Routing
+1. Widget Lifecycle
+1. Asynchronous Code
+1. Flutter Packages (http)
+1. World Time API
+1. WorldTime Custom Class
+1. Error Handling
+1. Passing Route Data
+1. Formatting & Showing Dates
+1. Loaders / Spinners
+1. Ternary Operators
+1. List View Builder
+1. Updating the Time
 
-A few resources to get you started if this is your first Flutter project:
+# Tutorial 1: Wordpair Generator
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Please follow [Brad Traversy's Tutorial](https://www.youtube.com/watch?v=1gDhl4leEzA) or check out [the original document](https://flutter.dev/docs/get-started/codelab).
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="./uploads/demo.gif" alt="Demo" width="300px">
