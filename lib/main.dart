@@ -6,13 +6,24 @@ void main() {
       appBar: AppBar(
         title: const Text('my first app'),
         centerTitle: true,
+        backgroundColor: Colors.red[600],
       ),
-      body: const Center(
-        child: Text('hello ninjas!'),
+      body: Center(
+        child: Text(
+          'hello ninjas!',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 2.0,
+            color: Colors.grey[600],
+            fontFamily: 'IndieFlower'
+          )
+        ),
       ),
-      floatingActionButton: const FloatingActionButton(
-        child: Text('click'),
+      floatingActionButton: FloatingActionButton(
         onPressed: null,
+        child: const Text('click'),
+        backgroundColor: Colors.red[600],
       ),
     ),
   ));
