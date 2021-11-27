@@ -16,7 +16,11 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Image.asset('assets/home-2.jpeg')
+        child: IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.alternate_email),
+          color: Colors.amber,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: null,
