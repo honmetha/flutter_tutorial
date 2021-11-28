@@ -20,25 +20,23 @@ class Home extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
           Row(
-            children: const <Widget>[
-              Text('hello,'),
-              Text(' world'),
+            children: [
+              Container(
+                padding: const EdgeInsets.all(30.0),
+                color: Colors.pinkAccent,
+                child: const Text('two'),
+              ),
             ],
-          ),
-          Container(
-            padding: const EdgeInsets.all(20.0),
-            color: Colors.cyan,
-            child: const Text('one'),
-          ),
-          Container(
-            padding: const EdgeInsets.all(30.0),
-            color: Colors.pinkAccent,
-            child: const Text('two'),
           ),
           Container(
             padding: const EdgeInsets.all(40.0),
             color: Colors.amber,
             child: const Text('three'),
+          ),
+          Container(
+            padding: const EdgeInsets.all(20.0),
+            color: Colors.cyan,
+            child: const Text('one'),
           ),
         ],
       ),
