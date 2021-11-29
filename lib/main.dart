@@ -1,56 +1,42 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: Home()
-  ));
-}
+void main() => runApp(const MaterialApp(home: NinjaCard()));
 
-class Home extends StatelessWidget {
+class NinjaCard extends StatelessWidget {
+  const NinjaCard({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[900],
       appBar: AppBar(
-        title: const Text('my first app'),
-        centerTitle: true,
-        backgroundColor: Colors.red[600],
+        title: const Text('Ninja ID Card'),
+        backgroundColor: Colors.grey[850],
+        elevation: 0.0,
       ),
-      body: Row(
-        children: <Widget>[
-          Expanded(
-            flex: 3,
-            child: Image.asset('assets/home-1.jpeg')
-          ),
-          Expanded(
-            flex: 1,
-            child: Container(
-              padding: const EdgeInsets.all(30.0),
-              color: Colors.cyan,
-              child: const Text('1'),
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            const Text(
+              'NAME',
+              style: TextStyle(
+                color: Colors.grey,
+                letterSpacing: 2.0,
+              ),
             ),
-          ),
-          Expanded(
-            flex: 1,
-            child: Container(
-              padding: const EdgeInsets.all(30.0),
-              color: Colors.pinkAccent,
-              child: const Text('2'),
+            Text(
+              'Chun-Li',
+              style: TextStyle(
+                color: Colors.amberAccent[200],
+                letterSpacing: 2.0,
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
-          Expanded(
-            flex: 1,
-            child: Container(
-              padding: const EdgeInsets.all(30.0),
-              color: Colors.amber,
-              child: const Text('3'),
-            ),
-          ),
-        ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: null,
-        child: const Text('click'),
-        backgroundColor: Colors.red[600],
+          ],
+        ),
       ),
     );
   }
