@@ -1,105 +1,33 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MaterialApp(home: NinjaCard()));
+void main() => runApp(const MaterialApp(
+      home: QuoteList(),
+    ));
 
-class NinjaCard extends StatefulWidget {
-  const NinjaCard({Key? key}) : super(key: key);
+class QuoteList extends StatefulWidget {
+  const QuoteList({Key? key}) : super(key: key);
 
   @override
-  State<NinjaCard> createState() => _NinjaCardState();
+  _QuoteListState createState() => _QuoteListState();
 }
 
-class _NinjaCardState extends State<NinjaCard> {
-  int ninjaLevel = 0;
+class _QuoteListState extends State<QuoteList> {
+  List<String> quotes = [
+    'A man who dares to waste one hour of time has not discovered the value of life.',
+    'It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is most adaptable to change.',
+    'There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.'
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[900],
+      backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        title: const Text('Ninja ID Card'),
-        backgroundColor: Colors.grey[850],
-        elevation: 0.0,
+        title: const Text('Awesome Quotes'),
+        backgroundColor: Colors.redAccent,
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            ninjaLevel += 1;
-          });
-        },
-        child: const Icon(Icons.add),
-        backgroundColor: Colors.grey[800],
-      ),
-      body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            const Center(
-              child: CircleAvatar(
-                backgroundImage: AssetImage('assets/thumb.jpeg'),
-                radius: 40.0,
-              ),
-            ),
-            Divider(
-              height: 90.0,
-              color: Colors.grey[800],
-            ),
-            const Text(
-              'NAME',
-              style: TextStyle(
-                color: Colors.grey,
-                letterSpacing: 2.0,
-              ),
-            ),
-            const SizedBox(height: 10.0),
-            Text(
-              'Chun-Li',
-              style: TextStyle(
-                color: Colors.amberAccent[200],
-                letterSpacing: 2.0,
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 30.0),
-            const Text(
-              'CURRENT NINJA LEVEL',
-              style: TextStyle(
-                color: Colors.grey,
-                letterSpacing: 2.0,
-              ),
-            ),
-            const SizedBox(height: 10.0),
-            Text(
-              '$ninjaLevel',
-              style: TextStyle(
-                color: Colors.amberAccent[200],
-                letterSpacing: 2.0,
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 30.0),
-            Row(
-              children: <Widget>[
-                Icon(
-                  Icons.email,
-                  color: Colors.grey[400],
-                ),
-                const SizedBox(width: 10.0),
-                Text(
-                  'chun.li@thenetninja.co.uk',
-                  style: TextStyle(
-                    color: Colors.grey[400],
-                    fontSize: 18.0,
-                    letterSpacing: 1.0,
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),
+      body: Column(
+        children: quotes.map((quote) => Text(quote)).toList(),
       ),
     );
   }
