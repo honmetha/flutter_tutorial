@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'quote.dart';
 
 class QuoteCard extends StatelessWidget {
-  final dynamic quote;
-  QuoteCard({ this.quote });
+  final Quote quote;
+  const QuoteCard({ Key? key, required this.quote }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
