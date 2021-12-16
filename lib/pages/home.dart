@@ -12,8 +12,11 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    data = ModalRoute.of(context)!.settings.arguments as Map<String, String>;
+    data = ModalRoute.of(context)!.settings.arguments as Map<String, Object>;
     print(data);
+
+    // set background
+    String bgImage = data['isDaytime'] ? 'day.png' : 'night.png';
 
     return Scaffold(
       body: SafeArea(
