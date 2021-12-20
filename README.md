@@ -5,7 +5,7 @@
 
 ## 📱 Demo
 
-<img src="./uploads/demo2.gif" alt="Demo2">
+<img src="./uploads/demo2.gif" alt="Demo2" width="300px">
 
 ## 📖 Chapters
 
