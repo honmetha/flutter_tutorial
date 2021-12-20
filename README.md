@@ -3,6 +3,10 @@
 ![What is Flutter?](./uploads/what-is-flutter.png)
 ![Why Flutter?](./uploads/why-flutter.png)
 
+## 📱 Demo
+
+<img src="./uploads/demo2.gif" alt="Demo2">
+
 ## 📖 Chapters
 
 1. Intro & Setup
