@@ -5,7 +5,7 @@
 
 ## 📱 Demo
 
-<img src="./uploads/demo2.gif" alt="Demo2" width="300px">
+<img src="./uploads/demo2.gif" alt="Demo2" width="300">
 
 ## 📖 Chapters
 
@@ -56,4 +56,4 @@
 
 Please follow [Brad Traversy's Tutorial](https://www.youtube.com/watch?v=1gDhl4leEzA) or check out [the original document](https://flutter.dev/docs/get-started/codelab).
 
-<img src="./uploads/demo.gif" alt="Demo" width="300px">
+<img src="./uploads/demo.gif" alt="Demo" width="300">
